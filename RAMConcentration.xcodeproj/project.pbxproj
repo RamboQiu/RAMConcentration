@@ -13,6 +13,8 @@
 		41D8CDE723EA9FF9007CD9B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D8CDE523EA9FF9007CD9B8 /* Main.storyboard */; };
 		41D8CDE923EA9FFC007CD9B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D8CDE823EA9FFC007CD9B8 /* Assets.xcassets */; };
 		41D8CDEC23EA9FFC007CD9B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D8CDEA23EA9FFC007CD9B8 /* LaunchScreen.storyboard */; };
+		41D8CDF523EAC6E1007CD9B8 /* RAMConcentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D8CDF423EAC6E1007CD9B8 /* RAMConcentration.swift */; };
+		41D8CDF723EAC72D007CD9B8 /* RAMCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D8CDF623EAC72D007CD9B8 /* RAMCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		41D8CDE823EA9FFC007CD9B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41D8CDEB23EA9FFC007CD9B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41D8CDED23EA9FFC007CD9B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41D8CDF423EAC6E1007CD9B8 /* RAMConcentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMConcentration.swift; sourceTree = "<group>"; };
+		41D8CDF623EAC72D007CD9B8 /* RAMCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				41D8CDE323EA9FF9007CD9B8 /* ViewController.swift */,
 				41D8CDE523EA9FF9007CD9B8 /* Main.storyboard */,
+				41D8CDF423EAC6E1007CD9B8 /* RAMConcentration.swift */,
+				41D8CDF623EAC72D007CD9B8 /* RAMCard.swift */,
 				41D8CDF323EAA216007CD9B8 /* Supporting Files */,
 				41D8CDED23EA9FFC007CD9B8 /* Info.plist */,
 			);
@@ -146,6 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41D8CDF523EAC6E1007CD9B8 /* RAMConcentration.swift in Sources */,
+				41D8CDF723EAC72D007CD9B8 /* RAMCard.swift in Sources */,
 				41D8CDE423EA9FF9007CD9B8 /* ViewController.swift in Sources */,
 				41D8CDE023EA9FF9007CD9B8 /* AppDelegate.swift in Sources */,
 				41D8CDE223EA9FF9007CD9B8 /* SceneDelegate.swift in Sources */,
