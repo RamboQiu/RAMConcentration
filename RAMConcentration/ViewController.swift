@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var flipCountLabel: UILabel!
     @IBOutlet var cardButtons: [UIButton]!
     
-    var emojiChoices: [String] = ["🤡","👺","👻","🎃","🤖","🤡","👺","👻","🎃","🤖"]
+    var emojiChoices: [String] = ["🤡","👺","👻","🎃","🤖","💩","👽","👾","☠️","🤠"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

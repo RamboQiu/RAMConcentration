@@ -50,6 +50,8 @@ class Concentration {
         }
         
         // TODO: Shuffle the cards
-        
+        cards.sort { ( card1: Card, card2: Card) -> Bool in
+            return arc4random_uniform(2) > 0
+        }
     }
 }
