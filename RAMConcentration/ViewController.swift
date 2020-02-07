@@ -18,30 +18,40 @@ class ViewController: UIViewController {
 //    简写 var emoji = Dictionary<Int, String>()
 //    再简写 var emoji = [Int:String]()
     
-    var game: Concentration! {
+    private var game: Concentration! {
         didSet {
             updateViewFromModel()
         }
     }
     
     
-    var flipCount = 0 {
+    private(set) var flipCount = 0 {
         didSet {
             flipCountLabel.text = "Flips: \(flipCount)"
         }
     }
     
-    @IBOutlet weak var flipCountLabel: UILabel!
-    @IBOutlet var cardButtons: [UIButton]!
+    // 只读属性，这种是不会存储store到内存中的，每次取都去计算get
+    //    var numberOfPairsOfCards: Int {
+    //        return (cardButtons.count + 1) / 2
+    //    }
+    var numberOfPairsOfCards: Int {
+        get {
+            return (cardButtons.count + 1) / 2
+        }
+    }
     
-    var emojiChoices: [String] = ["🤡","👺","👻","🎃","🤖","💩","👽","👾","☠️","🤠"]
+    @IBOutlet private weak var flipCountLabel: UILabel!
+    @IBOutlet private var cardButtons: [UIButton]!
+    
+    private var emojiChoices: [String] = ["🤡","👺","👻","🎃","🤖","💩","👽","👾","☠️","🤠"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        game = Concentration(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
+        game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
     }
     
-    @IBAction func touchCard(_ sender: UIButton) {
+    @IBAction private func touchCard(_ sender: UIButton) {
         flipCount += 1
         if let cardNumber = cardButtons.firstIndex(of: sender) {
             game.chooseCard(at: cardNumber)
@@ -51,7 +61,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func updateViewFromModel() {
+    private func updateViewFromModel() {
 //        for index in 0..<cardButtons.count {
         for index in cardButtons.indices {
             let button = cardButtons[index]
@@ -66,13 +76,13 @@ class ViewController: UIViewController {
         }
     }
     
-    var emoji = [Int:String]()
+    private var emoji = [Int:String]()
     
-    func emoji(for card: Card) -> String {
+    private func emoji(for card: Card) -> String {
 //        let chosenEmoji = emoji[card.identifier]
         if emoji[card.identifier] == nil , emojiChoices.count > 0 {
-            let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count)))
-            emoji[card.identifier] = emojiChoices.remove(at: randomIndex)
+//            let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count)))
+            emoji[card.identifier] = emojiChoices.remove(at: emojiChoices.count.arc4random)
         }
         
         // ??前后没有空格会报错
@@ -81,4 +91,39 @@ class ViewController: UIViewController {
 
 
 }
+
+extension Int {
+    var arc4random: Int {
+        get {
+            if self > 0 {
+                return Int(arc4random_uniform(UInt32(self)))
+            } else if self < 0 {
+                return -Int(arc4random_uniform(UInt32(abs(self))))
+            } else {
+                return 0
+            }
+        }
+    }
+}
+
+// optional chaining
+
+
+//let x: String? = ...
+//let y = x?.foo()?.bar?.z
+//
+//底层实现
+//switch x {
+//    case .none: y = nil
+//    case .some(let data1):
+//        switch data1.foo() {
+//            case .none: y = nil
+//            case .some(let data2): {
+//                switch data2.bar {
+//                    case .none: y = nil
+//                    case .some(let data3): y = data3.z
+//                }
+//            }
+//        }
+//}
 
