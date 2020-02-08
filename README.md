@@ -1,5 +1,7 @@
 # RAMConcentration
-斯坦福swift课程学习
+[swift官方学习资料](https://developer.apple.com/cn/swift/resources/)
+
+[斯坦福swift课程学习](https://itunes.apple.com/us/course/developing-ios-10-apps-with-swift/id1198467120)
 
 主要记录下和OC的差异的地方
 
