@@ -8,23 +8,15 @@
 
 import Foundation
 
-class Concentration {
+struct Concentration {
 //    var cards = Array<Card>() 数组的写法有点像java
     private(set) var cards = [Card]()
     
     private var indexOfOneAndOnlyFaceUpCard: Int? {
         get {
-            var foundIndex: Int?
-            for index in cards.indices {
-                if cards[index].isFaceUp {
-                    if foundIndex == nil {
-                        foundIndex = index
-                    } else {
-                        return nil
-                    }
-                }
-            }
-            return foundIndex
+//            let faceUpCardIndices = cards.indices.filter { cards[$0].isFaceUp }
+//            return faceUpCardIndices.count == 1 ? faceUpCardIndices.first : nil
+            return cards.indices.filter { cards[$0].isFaceUp }.oneAndOnly
         }
         // set(newValue) {
         // 不写newValue的参数形式，默认就是newValue参数
@@ -35,12 +27,12 @@ class Concentration {
         }
     }
     
-    func chooseCard(at index: Int) {
+    mutating func chooseCard(at index: Int) {
         assert(cards.indices.contains(index), "Concentration.chooseCard(at: \(index)): chosen index not in the cards")
         if !cards[index].isMatched {
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
                 // check if card match
-                if cards[matchIndex].identifier == cards[index].identifier {
+                if cards[matchIndex] == cards[index] {
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
                 }
@@ -71,5 +63,12 @@ class Concentration {
         cards.sort { ( card1: Card, card2: Card) -> Bool in
             return arc4random_uniform(2) > 0
         }
+    }
+}
+
+
+extension Collection {
+    var oneAndOnly: Element? {
+        return count == 1 ? first : nil
     }
 }

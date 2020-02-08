@@ -13,10 +13,20 @@ import Foundation
  struct值传递，代表每一次赋值都是copy，class是引用传递
 **/
 
-struct Card {
+struct Card: Hashable {
+    var hashValue: Int {
+        return identifier
+    }
+    
+    
+    
+    static func ==(lhs: Card, rhs: Card) -> Bool {
+        return lhs.identifier == rhs.identifier
+    }
+    
     var isFaceUp = false
     var isMatched = false
-    var identifier: Int
+    private var identifier: Int
     
     private static var identifierFactory = 0
     
