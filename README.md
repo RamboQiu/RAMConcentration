@@ -186,9 +186,108 @@
 
    任何协议里面有可选实现方法，则这个协议必须要是@objc
 
-   @objc还有用在其他地方，自行google
+   @objc还有用在其他地方，[例如](https://www.jianshu.com/p/b651126b1b1d)
 
 3. mutating
 
    Any functions that are expected to mutate the receiver should be marked mutating (unless you are going to restrict your protocol to class implementers only with class keyword)
 
+
+
+# Drawing
+
+1. Thrown Errors
+
+   ```swift
+   func save() throws
+   
+   do {
+   	try context.save()
+   } catch let error {
+   	throw
+   }
+   ```
+
+2. Any & AnyObject
+
+   Any 类似OC的id，AnyObject只用来修饰class
+
+   将Any转化为类来使用，不然无法使用，使用as?
+
+   ```swift
+   let unknown: Any = ....// we can't send unknown a message because it's "typeless"
+   if let foo = unknown as? MyType {
+   	// foo is of type MyType in here
+   	// if unknown was not of type MyType, then we'll never get here
+   }
+   ```
+
+3. swift中，一个对象可以不继承自NSObject
+
+4. enum中，如果枚举类型是String，则取值是key
+
+   ```swift
+   enum Suit: String {
+     case spades // "spades"
+     case hearts // "hearts" 
+     case diamonds
+     case clubs
+   }
+   ```
+
+5. enum枚举例子
+
+   ```swift
+   enum Rank {
+     case ace
+     case two
+     case three
+     `
+     `
+     `
+     case jake
+     case queen
+     case king
+   }
+   
+   enum Rank {
+     case ace
+     case face(String)
+     case numeric(Int)
+   
+     var order: Int {
+       switch self {
+         case .ace: return 1
+         case .numeric(let pips): return pips
+         case .face(let kind):
+         if kind == "J" {
+           return 11
+         } else if kind == "Q" {
+           return 12
+         } else {
+           return 13
+         }
+         default: return 0
+       }
+     }
+   }
+   
+   enum Rank {
+     case ace
+     case face(String)
+     case numeric(Int)
+   
+     var order: Int {
+       switch self {
+         case .ace: return 1
+         case .numeric(let pips): return pips
+         case .face(let kind) where kind == "J": return 11
+         case .face(let kind) where kind == "Q": return 11
+         case .face(let kind) where kind == "K": return 11
+         default: return 0
+       }
+     }
+   }
+   ```
+
+   

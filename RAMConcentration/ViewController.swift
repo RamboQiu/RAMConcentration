@@ -61,9 +61,17 @@ class ViewController: UIViewController {
 //    private var emojiChoices: [String] = ["🤡","👺","👻","🎃","🤖","💩","👽","👾","☠️","🤠"]
     private var emojiChoices = "🤡👺👻🎃🤖💩👽👾☠️🤠"
     
+    var deck = PlayingCardDeck()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
+        
+        for _ in 1...10 {
+            if let card = deck.draw() {
+                print("\(card)")
+            }
+        }
     }
     
     @IBAction private func touchCard(_ sender: UIButton) {
