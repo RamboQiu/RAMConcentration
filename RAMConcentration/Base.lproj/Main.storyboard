@@ -138,20 +138,45 @@
                                 <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="A2l-j4-YQc" customClass="PlayingCardView" customModule="RAMConcentration" customModuleProvider="target">
+                                <rect key="frame" x="116.66666666666669" y="402.99999999999994" width="142" height="227.33333333333331"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="43V-cG-r6F"/>
+                                    <constraint firstAttribute="width" secondItem="A2l-j4-YQc" secondAttribute="height" multiplier="5:8" id="wO2-wJ-hsA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="e0Y-Cg-1OE" appends="YES" id="3gD-Rs-5Y4"/>
+                                </connections>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Cyz-mw-m7n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2Pb-ij-hEl"/>
                             <constraint firstItem="ooX-se-NzG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Cyz-mw-m7n" secondAttribute="bottom" constant="8" symbolic="YES" id="3Ub-HT-sEW"/>
+                            <constraint firstItem="A2l-j4-YQc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Cyz-mw-m7n" secondAttribute="bottom" constant="8" symbolic="YES" id="7LN-yF-uWW"/>
+                            <constraint firstItem="A2l-j4-YQc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="D9N-09-Ya2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ooX-se-NzG" secondAttribute="bottom" id="MbQ-LS-Pha"/>
+                            <constraint firstItem="A2l-j4-YQc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="N4k-uZ-iin"/>
                             <constraint firstItem="ooX-se-NzG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Wyk-rb-UfN"/>
+                            <constraint firstItem="A2l-j4-YQc" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="105.66666666666663" id="hru-yv-Dvn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="A2l-j4-YQc" secondAttribute="trailing" constant="20" id="nS7-cK-Uwm"/>
                             <constraint firstItem="Cyz-mw-m7n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="olU-3F-BBm"/>
+                            <constraint firstItem="ooX-se-NzG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="A2l-j4-YQc" secondAttribute="bottom" constant="8" symbolic="YES" id="qf1-1y-uF9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cyz-mw-m7n" secondAttribute="trailing" constant="20" id="yxZ-p8-Vvh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="flipCountLabel" destination="ooX-se-NzG" id="QiE-ah-Rvn"/>
+                        <outlet property="playingCardView" destination="A2l-j4-YQc" id="hFX-Ln-2w9"/>
                         <outletCollection property="cardButtons" destination="8DC-t3-gUy" collectionClass="NSMutableArray" id="g0g-Q9-EMW"/>
                         <outletCollection property="cardButtons" destination="hfu-cL-jG8" collectionClass="NSMutableArray" id="meF-ng-AuP"/>
                         <outletCollection property="cardButtons" destination="tuM-vG-8NX" collectionClass="NSMutableArray" id="xAI-CG-aYL"/>
@@ -167,6 +192,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="e0Y-Cg-1OE">
+                    <connections>
+                        <action selector="flipCard:" destination="BYZ-38-t0r" id="tcV-ZY-7SQ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-453.60000000000002" y="109.35960591133005"/>
         </scene>

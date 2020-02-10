@@ -294,3 +294,56 @@
 
 # 6. Multitouch
 
+1. 使用context在drawRect中画圆
+
+   ```swift
+   if let context = UIGraphicsGetCurrentContext() {
+     context.addArc(center: CGPoint(x: bounds.midX, y: bounds.midY), radius: 100, startAngle: 0, endAngle: 2*CGFloat.pi, clockwise: true)
+     context.setLineWidth(5.0)
+     UIColor.green.setFill()
+     UIColor.red.setStroke()
+     context.strokePath()
+     context.fillPath()
+   }
+   ```
+
+   画出的圆，中间没有fill红色的原因：
+
+   用strokePath的时候实际上是it consumes the path, it uses up the path, so when we do the fillPath on the next line, there's no path。
+
+   所以想出效果应该用UIBezierPath
+
+2. storyboard的代码显示设置
+
+   ```swift
+   @IBDesignable // 设置这个，可以build到storyboard中，除了image，image需要单独设置
+   class PlayingCardView: UIView {
+     @IBInspectalbe
+     var rank: Int = 12 // 这个会变成storyboard的inspector中
+     
+     
+     UIImage(named: rankString+suit, in: Bundle(for: self.classForCoder), compatibleWith: traitCollection) // 这样image就能在interface中查看了
+   }
+   ```
+
+3. selector还是oc的，使用有技巧
+
+   使用#selector 并且方法的前面需要加@objc 代表这个是一个oc的runtime方法
+
+   ```swift
+   @IBOutlet weak var playingCardView: PlayingCardView! {
+     didSet {
+       let swipe = UISwipeGestureRecognizer(target: self, action: #selector(nextCard))
+       swipe.direction = [.left, .right]
+       playingCardView.addGestureRecognizer(swipe)
+     }
+   }
+   @objc func nextCard() {
+     if let card = deck.draw() {
+       playingCardView.rank = card.rank.order
+       playingCardView.suit = card.suit.rawValue
+     }
+   }
+   ```
+
+   

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		41548F3E23F0F1C40055E981 /* RAMPlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41548F3D23F0F1C40055E981 /* RAMPlayingCard.swift */; };
 		41548F4023F0FA120055E981 /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41548F3F23F0FA120055E981 /* PlayingCardDeck.swift */; };
+		41548F4223F1468F0055E981 /* PlayingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41548F4123F1468F0055E981 /* PlayingCardView.swift */; };
 		41D8CDE023EA9FF9007CD9B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D8CDDF23EA9FF9007CD9B8 /* AppDelegate.swift */; };
 		41D8CDE223EA9FF9007CD9B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D8CDE123EA9FF9007CD9B8 /* SceneDelegate.swift */; };
 		41D8CDE423EA9FF9007CD9B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D8CDE323EA9FF9007CD9B8 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		41548F3D23F0F1C40055E981 /* RAMPlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMPlayingCard.swift; sourceTree = "<group>"; };
 		41548F3F23F0FA120055E981 /* PlayingCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
+		41548F4123F1468F0055E981 /* PlayingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardView.swift; sourceTree = "<group>"; };
 		41D8CDDC23EA9FF9007CD9B8 /* RAMConcentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RAMConcentration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D8CDDF23EA9FF9007CD9B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41D8CDE123EA9FF9007CD9B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				41D8CDF623EAC72D007CD9B8 /* RAMCard.swift */,
 				41548F3D23F0F1C40055E981 /* RAMPlayingCard.swift */,
 				41548F3F23F0FA120055E981 /* PlayingCardDeck.swift */,
+				41548F4123F1468F0055E981 /* PlayingCardView.swift */,
 				41D8CDF323EAA216007CD9B8 /* Supporting Files */,
 				41D8CDED23EA9FFC007CD9B8 /* Info.plist */,
 			);
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41D8CDF523EAC6E1007CD9B8 /* RAMConcentration.swift in Sources */,
+				41548F4223F1468F0055E981 /* PlayingCardView.swift in Sources */,
 				41D8CDF723EAC72D007CD9B8 /* RAMCard.swift in Sources */,
 				41D8CDE423EA9FF9007CD9B8 /* ViewController.swift in Sources */,
 				41548F3E23F0F1C40055E981 /* RAMPlayingCard.swift in Sources */,
