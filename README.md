@@ -194,7 +194,7 @@
 
 
 
-# Drawing
+# 5. Drawing
 
 1. Thrown Errors
 
@@ -291,3 +291,6 @@
    ```
 
    
+
+# 6. Multitouch
+
