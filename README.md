@@ -347,3 +347,8 @@
    ```
 
    
+
+# 7. Multiple MVCs, Timer, and Animation
+
+介绍了下使用storyboard管理vc（tabController，navigationController，splitViewController）
+
