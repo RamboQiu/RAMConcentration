@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Gw-m2-5W8">
-    <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="3GC-6p-s2A" customClass="ConcentrationThemeViewController" customModule="RAMConcentration" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OFa-Pa-kwm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xlf-UW-EKF">
-                                <rect key="frame" x="149.5" y="616.5" width="76" height="133"/>
+                                <rect key="frame" x="169" y="384" width="76" height="133"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3W-8F-H5V">
                                         <rect key="frame" x="0.0" y="0.0" width="76" height="39"/>
@@ -67,17 +67,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ConcentrationViewController" customModule="RAMConcentration" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Cyz-mw-m7n">
-                                <rect key="frame" x="20" y="0.0" width="984" height="340"/>
+                                <rect key="frame" x="20" y="88" width="374" height="340"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dPK-ec-C9F">
-                                        <rect key="frame" x="0.0" y="0.0" width="984" height="108"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="108"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfu-cL-jG8">
-                                                <rect key="frame" x="0.0" y="0.0" width="240" height="108"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="108"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                                 <connections>
@@ -85,7 +85,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuM-vG-8NX">
-                                                <rect key="frame" x="248" y="0.0" width="240" height="108"/>
+                                                <rect key="frame" x="95.5" y="0.0" width="87.5" height="108"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                                 <connections>
@@ -93,7 +93,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbL-td-BgL">
-                                                <rect key="frame" x="496" y="0.0" width="240" height="108"/>
+                                                <rect key="frame" x="191" y="0.0" width="87.5" height="108"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                                 <connections>
@@ -101,7 +101,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DC-t3-gUy">
-                                                <rect key="frame" x="744" y="0.0" width="240" height="108"/>
+                                                <rect key="frame" x="286.5" y="0.0" width="87.5" height="108"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                                 <connections>
@@ -111,10 +111,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8Bd-WU-hzi">
-                                        <rect key="frame" x="0.0" y="116" width="984" height="108"/>
+                                        <rect key="frame" x="0.0" y="116" width="374" height="108"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21e-cG-LbF">
-                                                <rect key="frame" x="0.0" y="0.0" width="240" height="108"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="108"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                                 <connections>
@@ -122,7 +122,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6H-t6-Yl3">
-                                                <rect key="frame" x="248" y="0.0" width="240" height="108"/>
+                                                <rect key="frame" x="95.5" y="0.0" width="87.5" height="108"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                                 <connections>
@@ -130,7 +130,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZ7-8s-2MR">
-                                                <rect key="frame" x="496" y="0.0" width="240" height="108"/>
+                                                <rect key="frame" x="191" y="0.0" width="87.5" height="108"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                                 <connections>
@@ -138,7 +138,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfI-lK-gpz">
-                                                <rect key="frame" x="744" y="0.0" width="240" height="108"/>
+                                                <rect key="frame" x="286.5" y="0.0" width="87.5" height="108"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                                 <connections>
@@ -148,10 +148,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ogo-d7-sc5">
-                                        <rect key="frame" x="0.0" y="232" width="984" height="108"/>
+                                        <rect key="frame" x="0.0" y="232" width="374" height="108"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYv-La-dLi">
-                                                <rect key="frame" x="0.0" y="0.0" width="240" height="108"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="108"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                                 <connections>
@@ -159,7 +159,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VcG-PJ-fWS">
-                                                <rect key="frame" x="248" y="0.0" width="240" height="108"/>
+                                                <rect key="frame" x="95.5" y="0.0" width="87.5" height="108"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                                 <connections>
@@ -167,7 +167,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cc-1D-u9K">
-                                                <rect key="frame" x="496" y="0.0" width="240" height="108"/>
+                                                <rect key="frame" x="191" y="0.0" width="87.5" height="108"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                                 <connections>
@@ -175,7 +175,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C59-yx-tM6">
-                                                <rect key="frame" x="744" y="0.0" width="240" height="108"/>
+                                                <rect key="frame" x="286.5" y="0.0" width="87.5" height="108"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                                 <connections>
@@ -187,13 +187,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flips: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooX-se-NzG">
-                                <rect key="frame" x="450" y="1268" width="124" height="48"/>
+                                <rect key="frame" x="145" y="765" width="124" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="A2l-j4-YQc" customClass="PlayingCardView" customModule="RAMConcentration" customModuleProvider="target">
-                                <rect key="frame" x="441" y="650" width="142" height="227.5"/>
+                                <rect key="frame" x="136" y="442.5" width="142" height="227.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -202,7 +202,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="rank">
-                                        <integer key="value" value="2"/>
+                                        <integer key="value" value="11"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
                                 </userDefinedRuntimeAttributes>
@@ -253,14 +253,14 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1215" y="917"/>
+            <point key="canvasLocation" x="632" y="1134"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="6mr-rx-wrT">
             <objects>
                 <viewController id="Px6-E8-ode" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Dl-7W-hg1">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="7i0-Gg-DkO"/>
@@ -269,23 +269,183 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s52-mf-lv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-904" y="2389"/>
+            <point key="canvasLocation" x="-1986" y="2336"/>
         </scene>
-        <!--Item 1-->
+        <!--PlayingCard-->
         <scene sceneID="9va-sw-Pt2">
             <objects>
-                <viewController id="Khj-Mk-dcB" sceneMemberID="viewController">
+                <viewController id="Khj-Mk-dcB" customClass="PlayingCardViewController" customModule="RAMConcentration" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="STS-IL-0f4">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tgh-hV-qSj" customClass="PlayingCardView" customModule="RAMConcentration" customModuleProvider="target">
+                                <rect key="frame" x="20" y="44" width="100" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zla-21-CSZ" customClass="PlayingCardView" customModule="RAMConcentration" customModuleProvider="target">
+                                <rect key="frame" x="149" y="44" width="100" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ue-Pc-FiI" customClass="PlayingCardView" customModule="RAMConcentration" customModuleProvider="target">
+                                <rect key="frame" x="278" y="44" width="100" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QUJ-jg-k2G" customClass="PlayingCardView" customModule="RAMConcentration" customModuleProvider="target">
+                                <rect key="frame" x="20" y="252" width="100" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jbn-Tb-dB5" customClass="PlayingCardView" customModule="RAMConcentration" customModuleProvider="target">
+                                <rect key="frame" x="149" y="252" width="100" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fls-NK-0Zj" customClass="PlayingCardView" customModule="RAMConcentration" customModuleProvider="target">
+                                <rect key="frame" x="278" y="252" width="100" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pqh-S2-9Pz" customClass="PlayingCardView" customModule="RAMConcentration" customModuleProvider="target">
+                                <rect key="frame" x="20" y="460" width="100" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nni-tb-SQO" customClass="PlayingCardView" customModule="RAMConcentration" customModuleProvider="target">
+                                <rect key="frame" x="149" y="460" width="100" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="evr-Cc-L51" customClass="PlayingCardView" customModule="RAMConcentration" customModuleProvider="target">
+                                <rect key="frame" x="278" y="460" width="100" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o0P-Jz-19Z" customClass="PlayingCardView" customModule="RAMConcentration" customModuleProvider="target">
+                                <rect key="frame" x="20" y="668" width="100" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kj1-nW-akp" customClass="PlayingCardView" customModule="RAMConcentration" customModuleProvider="target">
+                                <rect key="frame" x="149" y="668" width="100" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZO1-UA-Hui" customClass="PlayingCardView" customModule="RAMConcentration" customModuleProvider="target">
+                                <rect key="frame" x="278" y="668" width="100" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="QGc-0p-8m6"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="vct-is-0kr"/>
+                    <tabBarItem key="tabBarItem" title="PlayingCard" id="vct-is-0kr"/>
+                    <connections>
+                        <outletCollection property="cardViews" destination="Tgh-hV-qSj" collectionClass="NSMutableArray" id="g51-66-d8Z"/>
+                        <outletCollection property="cardViews" destination="zla-21-CSZ" collectionClass="NSMutableArray" id="eaP-ng-EpD"/>
+                        <outletCollection property="cardViews" destination="4Ue-Pc-FiI" collectionClass="NSMutableArray" id="EVk-Ng-JYx"/>
+                        <outletCollection property="cardViews" destination="QUJ-jg-k2G" collectionClass="NSMutableArray" id="cvV-qy-XrO"/>
+                        <outletCollection property="cardViews" destination="jbn-Tb-dB5" collectionClass="NSMutableArray" id="3BM-Pi-5fB"/>
+                        <outletCollection property="cardViews" destination="fls-NK-0Zj" collectionClass="NSMutableArray" id="7xE-wb-9a1"/>
+                        <outletCollection property="cardViews" destination="Pqh-S2-9Pz" collectionClass="NSMutableArray" id="khM-wp-67V"/>
+                        <outletCollection property="cardViews" destination="nni-tb-SQO" collectionClass="NSMutableArray" id="MHG-wL-0rA"/>
+                        <outletCollection property="cardViews" destination="evr-Cc-L51" collectionClass="NSMutableArray" id="Odi-O4-aa0"/>
+                        <outletCollection property="cardViews" destination="o0P-Jz-19Z" collectionClass="NSMutableArray" id="dIE-1t-njn"/>
+                        <outletCollection property="cardViews" destination="kj1-nW-akp" collectionClass="NSMutableArray" id="K7Q-bH-4rK"/>
+                        <outletCollection property="cardViews" destination="ZO1-UA-Hui" collectionClass="NSMutableArray" id="VBU-iM-jCx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3mS-jc-rFV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-904" y="1632"/>
+            <point key="canvasLocation" x="-1710.144927536232" y="1524.7767857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="vFA-ON-8mz">
@@ -312,7 +472,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3VP-oO-sDU" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JO5-5D-cAb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

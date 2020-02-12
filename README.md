@@ -352,3 +352,37 @@
 
 介绍了下使用storyboard管理vc（tabController，navigationController，splitViewController）
 
+
+
+# 8. Animation
+
+1. Weak避免循环引用的写法
+
+   ```swift
+   class Zerg {
+     private var foo = { [weak weakSelf = self] in
+       weakSelf?.bar()
+     }
+     private func bar() {...}
+   }
+   
+   or 
+   private var foo = { [weak self = self] in
+   	self?.bar()
+   }
+   
+   or 
+   private var foo = { [weak self] in
+   	self?.bar()
+   }
+   ```
+
+2. 三种系统的动画学习
+
+   ```swift
+   UIView.transition
+   UIViewPropertyAnimator.runningPropertyAnimator
+   UIDynamicAnimator
+   ```
+
+   

@@ -167,6 +167,21 @@ extension Int {
     }
 }
 
+extension CGFloat {
+    var arc4random: CGFloat {
+        get {
+            let tmp = self * 10000.0
+            if self > 0 {
+                return CGFloat(arc4random_uniform(UInt32(tmp))) / 10000.0
+            } else if self < 0 {
+               return -CGFloat(arc4random_uniform(UInt32(abs(tmp)))) / 10000.0
+           } else {
+               return 0
+           }
+        }
+    }
+}
+
 // optional chaining
 
 
